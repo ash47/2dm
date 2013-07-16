@@ -100,7 +100,7 @@ function PANEL:SetSlot(slot, sort)
 	self._slot = slot
 	
 	-- Apply slot title:
-	self._slottxt = _2dm.slot_labels[slot]
+	self._slottxt = _2dm.slot_labels[slot] or ""
 	
 	-- Store our sort:
 	self._sort = sort

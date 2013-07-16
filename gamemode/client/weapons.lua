@@ -5,7 +5,7 @@ Client/Weapons.lua
 ---------------------------------------------------------]]--
 
 -- Ensure access to the global table:
-_2dm = _2dm or {}
+/*_2dm = _2dm or {}
 
 -- Create the store for weapons:
 _2dm.Weapons = _2dm.Weapons or {}
@@ -45,3 +45,4 @@ net.Receive("ApplyWeapon", function(len)
 	local num = net.ReadInt(16)
 	ApplyWeapon(ent, num)
 end)
+*/

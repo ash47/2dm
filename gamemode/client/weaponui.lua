@@ -5,7 +5,7 @@ Client/WeaponUI.lua
 ---------------------------------------------------------]]--
 if SERVER then return end
 
-_inputs = _inputs or {}
+/*_inputs = _inputs or {}
 
 local function makeSlider(parent, x, y, width, min, max, text, dec, default)
 	local s = vgui.Create( "DNumSlider", parent)
@@ -190,3 +190,4 @@ end
 net.Receive("F4", function(len)
 	WeaponCreator()
 end)
+*/

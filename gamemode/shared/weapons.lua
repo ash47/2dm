@@ -5,7 +5,7 @@ sHared/wEapons.lua
 ---------------------------------------------------------]]--
 
 -- Ensure access to our global table:
-_2dm = _2dm or {}
+/*_2dm = _2dm or {}
 
 -- Access the weapon table:
 _2dm.weapon = _2dm.weapon or {}
@@ -216,3 +216,4 @@ function NormalValue(args)
 	-- Return it:
 	return v
 end
+*/

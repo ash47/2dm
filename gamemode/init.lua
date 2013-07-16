@@ -15,7 +15,7 @@ function AddCSLuaFolder(folder)
 		AddCSLuaFile(string.lower(folder.."/"..v))
 		
 		-- Workaround for shit:
-		include(string.lower(folder.."/"..v))
+		--include(string.lower(folder.."/"..v))
 	end
 	
 	-- Add all folders:
@@ -58,9 +58,6 @@ AddCSLuaFolder("client")
 
 -- Load the server config file:
 include("server_settings.lua")
-
--- Load the shared content:
-include("shared/_shared.lua")
 
 -- Load the gamemode:
 include("server/_server.lua")

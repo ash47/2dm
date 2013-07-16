@@ -3,7 +3,7 @@ Client/VGUI/_VGUI.lua
 
  - Load all custom VGUIs
 ---------------------------------------------------------]]--
-if SERVER then return end
+--if SERVER then return end
 
 include("d_invpanel.lua")		-- Inventory model panels
 include("d_invpanel_drag.lua")	-- A dragging special inventory panel

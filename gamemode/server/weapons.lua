@@ -9,7 +9,7 @@ Server side weapon tracking
 ]]--
 
 -- Ensure access to the global table:
-_2dm = _2dm or {}
+/*_2dm = _2dm or {}
 
 -- Create the store for weapons:
 _2dm.Weapons = _2dm.Weapons or {}
@@ -142,4 +142,4 @@ end
 
 function meta:Updated()
 	SendWeapon(self, -1)
-end]]--
+end]]--*/

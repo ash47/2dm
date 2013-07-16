@@ -4,7 +4,7 @@ Server/weaponUI.lua
  - Weapon UI server side stuff
 ---------------------------------------------------------]]--
 
-net.Receive("ApplyWeapon", function(len, ply)
+/*net.Receive("ApplyWeapon", function(len, ply)
 	len = len - 16
 	
 	local num = ply.Slot[ply.SlotActive]
@@ -101,4 +101,4 @@ net.Receive("ApplyWeapon", function(len, ply)
 	
 	-- Apply the update to the player's weapon:
 	ApplyWeapon(ply:GetActiveWeapon(), num)
-end)
+end)*/

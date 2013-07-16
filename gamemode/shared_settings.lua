@@ -12,3 +12,5 @@ _RespawnDelay = 20
 
 -- Fuck you too:
 print = MsgN
+
+PATH = "2dm/gamemode/"

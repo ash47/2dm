@@ -21,9 +21,9 @@ function SendSlotInfo(ply, slots)
 end
 
 function FillAmmo(num)
-	if _2dm.Weapons[num] then
+	/*if _2dm.Weapons[num] then
 		_2dm.Weapons[num].ActiveClip = _2dm.Weapons[num].ClipSize
-	end
+	end*/
 end
 
 -- Change the player's active slot:

@@ -57,11 +57,11 @@ function GM:PlayerInitialSpawn(ply)
 	ply.SlotActive = 1
 	
 	-- Send everything they will need:
-	SendAllWeapons(ply)
-	SendAllGadgets(ply)
+	//SendAllWeapons(ply)
+	//SendAllGadgets(ply)
 	
 	-- Load out the player's weapon:
-	Backpack_Load(ply)
+	//Backpack_Load(ply)
 	
 	-- Default them to red:
 	ply:SetTeam(TEAM_RED)
@@ -70,9 +70,9 @@ function GM:PlayerInitialSpawn(ply)
 	ply.AmmoStart = 5000
 	
 	-- Send everyone's active weapons to the new guy:
-	for k,v in pairs(player.GetAll()) do
+	/*for k,v in pairs(player.GetAll()) do
 		ApplyWeapon(v:GetActiveWeapon(), v.Slot[v.SlotActive], ply)
-	end
+	end*/
 end
 
 -- When the player spawns / respawns:

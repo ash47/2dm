@@ -5,7 +5,7 @@ SWEP.Instructions = "None for shoe"
 
 -- Set the hold type:
 SWEP.ht = 1
-SWEP.HoldType = _2dm.weapon.holdtypes[SWEP.ht]
+SWEP.HoldType = "normal"//_2dm.weapon.holdtypes[SWEP.ht]
 
 SWEP.FiresUnderwater = true
 SWEP.Weight = 1
