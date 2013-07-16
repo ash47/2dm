@@ -1,0 +1,31 @@
+@include "base.fgd"
+@include "halflife2.fgd"
+
+@SolidClass base(Trigger) = _2dm_lane_changer : "A volume that allows player's to change lanes."
+[
+	lane_up(target_destination) : "Lane Change UP" : : "Press FORWARD to change lanes. The entity specifying the point to change the Y value of the player to."
+	lane_down(target_destination) : "Lane Change DOWN" : : "Press BACK to change lanes. The entity specifying the point to change the Y value of the player to."
+	
+	spawnflags(flags) =
+	[
+		1 : "X (Left and Right)" : 0
+		2 : "Y (In and Out (lane change))" : 1
+		4 : "Z (Up and Down)" : 0
+	]
+]
+
+@PointClass base(Targetname, Origin) color(0 0 255) = _2dm_lane_marker : "Marks a Y-position to TELEPORT to."
+[
+]
+
+@PointClass base(Targetname) studio("models/editor/playerstart.mdl") color(0 0 255) = _2dm_spawn :
+	"This is where players will spawn."
+[
+	team(choices) : "Team" : 2 : "The team that will spawn here" =
+	[
+		1 : "Spectator (Unused)"
+		2 : "Yellow"
+		3 : "Cyan"
+	]
+
+]
